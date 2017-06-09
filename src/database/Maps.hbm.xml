@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="database.Map" table="maps">
+	
+	<id name="id" column="id" type="int">
+    <generator class="assigned"></generator>
+    
+ </id>
+	<property name="mapNumber" column="map_number" type="int"></property>
+	<property name="obstacle" column="obstacle" type="true_false"></property>
+	<property name="positionX" column="position_x" type="int"></property>
+	<property name="positionY" column="position_y" type="int"></property>
+</class>
+</hibernate-mapping>
