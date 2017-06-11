@@ -7,4 +7,11 @@ public interface Move {
 	public boolean collisionWithOpponentTank(int x, int y);
 	public void tryMoveObject();
 	
+	public default int toBoard(int x) {
+		int returnX = ((x-1) / 100);
+		if(returnX==-1)
+			return 0;
+		return returnX;
+	}
+	
 }
